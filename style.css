@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-weight: 400;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 }
 body {
 	background: #FFF;
-	font-family: 'Poppins', sans-serif;
+	font-family: Raleway , sans-serif;
 }
 
 header {
@@ -23,18 +24,28 @@ header {
 .black {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+@font-face {
+	font-family: Raleway;
+	src: url("fonts/Raleway/ralewaybold.ttf");
+  }
+  
+  div {
+	font-family: Raleway;
+  }
 nav {
 	padding-top: 20px;
-	padding-bottom: 20px;
-	top: 0;
-	position: fixed;
-	display: flex;
-	width: 100%;
-	z-index: 1000;
-	background:rgb(55, 53, 53);
-	justify-content: space-around;
-	transition: 1.5s;
-	align-items: center;
+    padding-bottom: 20px;
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    background: #6bc9ce;
+    justify-content: space-around;
+    transition: 1.5s;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 nav ul {
 	display: flex;
@@ -63,12 +74,15 @@ nav ul li a:hover {
 }
 .srch {
 	padding: 2px 10px;
-	display: flex;
-	/* align-items: center; */
-	justify-content: center;
-	/* background: #0066ff; */
-	border: 1px solid;
-	border-radius: 20px;
+    display: flex;
+   
+    justify-content: center;
+    /* background: #4babba; */
+    color: white;
+    border: 1px solid;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+    border-radius: 20px;
 }
 .srch img {
 	width: 25px;
@@ -84,54 +98,69 @@ nav ul li a:hover {
 
 .get-started {
 	margin-left: 50px;
-	padding: 5px 20px;
-	border: 2px solid #DF2771;
-	border-radius: 20px;
-	text-decoration: none;
-	
-	transition: .5s;
-	background-color: #DF2771;
-	color: #fff;
+    padding: 5px 20px;
+    border: 2px solid #af2ee1;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .5s;
+    background-color: #af2ee1;
+    color: #fff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .get-started:hover {
 	color: #2e2e2e;
 	background: #fff;
 }
 .logo img{
-	width: 120px;
-	cursor: pointer;
-	transition: all 1s;
+	width: 174px;
+    margin-left: 84px;
+    margin-bottom: -20px;
+    cursor: pointer;
+    transition: all 1s;
 }
 
 a, button {
-	float: left;
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-size: 15px;
-	color: Black;
-	display: block;
-	text-decoration: none;
-	text-align: center;
+	font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    color: Black;
+    display: block;
+    text-decoration: none;
+    text-align: center;
 }
 .head-container {
-	margin-top: 245px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
+	margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+	margin-bottom: auto;
 }
 .quote {
 	width: 600px;
 	transform: translateY(-50px);
+}
+
+.quote h3 {
+	font-weight: 300;
+    color: rgb(103 97 97);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 .quote h5 {
 	margin-top: 20px;
 	line-height: 20px;
 }
 .quote p {
-	font-size: 50px;
-	color: Black;
+	
+    font-size: 65px;
+    color: #2a2f8e;
+    font-weight: 400;
+    font-family: Raleway;
+
+	
 }
+
 .quote .play {
 	margin-top: 20px;
 	display: flex;
@@ -252,14 +281,15 @@ a, button {
 }
 .extra p {
 	padding: 30px;
-	padding-bottom: 150px;
-	font-size: 50px;
-	text-align: center;
-	color: #fff;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/courses/Web\ 2.png");
-	background-size: cover;
-	background-attachment: fixed;
-	font-family: cursive;
+    padding-bottom: 150px;
+    margin-top: 38px !important;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(images/SVG/tes-bg-portfolio-section.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Raleway;
 	z-index: -9;
 }
 .smbox {
@@ -283,21 +313,23 @@ a, button {
 }
 .smbox .data {
 	font-size: 80px;
-	color: #FA6146;	
+    color: #31999e;	
 }
 .smbox .det {
 	font-size: 20px;
-	color: #272529;
-	font-family: cursive;
+    color: #242b98;
+    font-family: 'Raleway';
 }
 
 /*Title*/
 .title {
-	 margin-top: 0px; 
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	text-align: center;
-	color: #2E3D49;
+	margin-top: 85px;
+    font-family: 'Raleway';
+    font-size: 48px;
+    margin-bottom: 117px;
+    text-align: center;
+    color: #2a308f;
+    font-weight: 400;
 }
 
 /*ABOUT*/
@@ -327,13 +359,21 @@ a, button {
 }
 .about-content .side-text h2 {
 	padding: 10px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: #2e3d49;
+    font-size: 1.5em;
 }
 .about-content .side-text p {
 	padding: 10px;
+    font-family: Helvetica;
+    color: #6b6767;
 }
 .about-content .side-image img {
-	width: 90%;
-	border-radius: 5px;
+	width: 120%;
+    border-radius: 5px;
+    margin-right: 180px;
+    margin-left: -90px;
 }
 .sideImage {
 	transform: translateX(100px);
@@ -343,6 +383,19 @@ a, button {
 .sideImage-appear {
 	opacity: 1;
 	transform: translateX(0px);
+}
+
+.vision-content  {
+
+	font-family: Arial, Helvetica, sans-serif;
+    margin-top: -86px;
+    margin-left: 169px;
+    margin-right: 195px;
+    align-self: center;
+    margin-bottom: 11px;
+    position: absolute;
+    font-size: 1.1em;
+
 }
 
 /*POPULAR SUBJECTS*/
@@ -363,13 +416,13 @@ a, button {
 .cbox .det a{
 	justify-content: space-around;
 	width: 250px;
-	padding: 28px;
-	border-radius: 10px;
-	border: 1px solid #d60a96;
-	font-size: 15px;
-	color: #272529;
-	font-family: 'Poppins';
-	text-decoration: none;
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid #d60a96;
+    font-size: 18px;
+    color: #272529;
+    font-family: 'Raleway';
+    text-decoration: none;
 }
 .cbox .det a:hover {
 	background: linear-gradient(to right, #4A51CC, #AFE3E4);
@@ -392,6 +445,11 @@ a, button {
 	justify-content: center;
 	margin-bottom: 50px;
 }
+
+.totalcard .img {
+
+	width: 100%;
+}
 .totalcard .card {
 	margin: 50px;
 	width: 300px;
@@ -399,8 +457,7 @@ a, button {
 	background: #fff;
 }
 .totalcard .card{
-	box-shadow: inset 0 0 10px rgba(0,0,0,0.4),
-					0 0 10px rgba(0,0,0,0.3);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .card:nth-child(1){
 	border-top: 5px #AF2EE1 ;
@@ -408,14 +465,14 @@ a, button {
 .card:nth-child(2){
 	border-top: 5px #AF2EE1;
 }
-.card:nth-child(1):hover {
+/* .card:nth-child(1):hover {
 	box-shadow: inset 0px 0px 10px #AF2EE1,
 				1px 1px 30px #AF2EE1;
 }
 .card:nth-child(2):hover {
 	box-shadow: inset 0px 0px 10px #AF2EE1,
 				1px 1px 30px #AF2EE1;
-}
+} */
 .totalcard .card img {
 	width: 100px;
 	height: 100px;
@@ -430,13 +487,13 @@ a, button {
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 #detail p{
-	font-size: 15px;
-	line-height: 25px;
-	font-variant: small-caps;
-	text-align: center;
-	margin: 25px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin: 25px;
+	margin-bottom: 23px;
+    margin-top: 0px;
+    font-family: helvetica;
 }
 #detail button {
 	outline: none;
@@ -456,7 +513,7 @@ a, button {
 	align-self: center;
 }
 .btn-urvashi:hover {
-	background: #AF2EE1;
+	background: #ffffff;
 	color: #fff;
 }
 /* .btn-roshan2:hover {
@@ -470,7 +527,7 @@ a, button {
 }
 .card-title {
 	font-size: 17px;
-	color: #343A40;
+	color: #242b98;
 	padding: 20px;
 	font-weight: 700;
 }
@@ -482,7 +539,7 @@ a, button {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/courses/Web\ 3.png");
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)),url("images/SVG/tes-bg-portfolio-section.png");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -501,8 +558,8 @@ a, button {
 	text-align: center;
 	width: 350px;
 	height: 200px;
-	box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
-					0 0 50px rgba(0,0,0,0.8);
+	/* box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
+					0 0 50px rgba(0,0,0,0.8); */
 	border-radius: 5px;
 	cursor: pointer;
 	transition-duration: .5s;
@@ -519,16 +576,16 @@ a, button {
 
 /*Contact Us Section*/
 .csec {
-	background: linear-gradient(to right, #CD1DCF, #62BCCA);
-	background-attachment: fixed; 
-	position: absolute;
-	width: 100%;
-	height: 250px;
-	top: 200px;
-	content: '';
-	transform-origin: top right;
-	transform: skewY(-10deg);
-	z-index: -1;
+	background-image: url(images/form-bg1440.png);
+    /* background-attachment: fixed; */
+    position: absolute;
+    width: 100%;
+    height: 495px;
+    top: 200px;
+    content: '';
+    /* transform-origin: top right; */
+    /* transform: skewY(-10deg); */
+    z-index: -1;
 }
 .back-contact {
 	margin-top: 0px;
@@ -574,6 +631,7 @@ a, button {
 form textarea {
 	width: 100%;
 	height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
 	box-shadow: inset 0 0 5px lightgray;
 	border: 1px solid rgba(0,0,0,0.2);
 	border-radius: 5px;
@@ -699,20 +757,20 @@ form textarea {
 	margin-top: 50px;
 	width: 100%;
 	display: flex;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/courses/Web\ 4.png");
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2)),url("images/extra/background-form2.svg");
 	background-size: cover;
 	padding: 50px 80px;
 	background-attachment: fixed;
 }
 .feed {
-	width: 800px;
-	height: 400px;
-	position: relative;
-	border-radius: 10px;
-	justify-content: center;
-	box-shadow: inset 0 0 90px rgba(0,0,0,0.6),
-					0 0 80px rgba(0,0,0,0.2);
-	background: rgba(0,0,0,0.4);
+	width: 626px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    justify-content: center;
+    /* box-shadow: inset 0 0 90px rgba(0,0,0,0.6), 0 0 80px rgba(0,0,0,0.2); */
+    background: rgb(204 219 232 / 31%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .feed form {
 	width: 100%;
@@ -722,9 +780,9 @@ form textarea {
 
 .feed form label {
 	position: absolute;
-	color: #f2f2f2;
-	font-size: 10px;
-	font-weight: 800;
+    color: #242b98;
+    font-size: 15px;
+    font-weight: 700;
 }
 .feed form input, .feed textarea {
 	padding: 15px;
@@ -748,17 +806,18 @@ form textarea {
 	height: 100px;
 }
 .feed #csubmit {
-	margin-top: 25px; 
-	background: linear-gradient(to right, #CD1DCF, #62BCCA);
-	border-radius: 5px;
-	border-style: none;
-	outline: none;
-	width: 100%;
-	padding: 15px 25px;
-	color: Black;
-	font-family: Poppins;
-	font-size: 12px;
-	cursor: pointer;
+	margin-top: 29px;
+    background: linear-gradient(to right, #CD1DCF, #62BCCA);
+    border-radius: 1px;
+    border-style: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 25px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 23px;
+    font-family: 'Raleway';
+    cursor: pointer;
 }
 
 /*SCROLLING TEXT*/
